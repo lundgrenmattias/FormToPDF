@@ -1,4 +1,4 @@
-### About this FormToPDF
+### About FormToPDF
 
 FromToPDF is a .NET Core MVC Application that generates a pdf and sends it to the user together with a basic insurance calculation.
 
