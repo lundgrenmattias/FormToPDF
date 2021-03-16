@@ -28,9 +28,6 @@ namespace FormToPDF.Facades
         {
             var rfqPdf = _rfqPdfGenerator.Generate(request);
 
-            // Only for test purposes
-            CreateCopyToFileSystem(rfqPdf);
-
             var rfqAttachment = new Attachment(
                 $"{MailResources.ProposalPrefix}-{request.CompanyName.WithFallback(MailResources.EmptyCompanyNameFilename)}.pdf",
                 rfqPdf);
